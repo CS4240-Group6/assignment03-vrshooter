@@ -9,20 +9,17 @@ public class CircularProgressBar : MonoBehaviour
     public Text ProgressIndicator;
     public Text ProgressText;
 
-    int targetsShot = 10;
-    int totalTargets = 20; //Insert the total number of scarecrow targets here
+    // public int totalTargets = 20; //Insert the total number of scarecrow targets here
+    
     float progress;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void updateProgress(float progress)
     {
-        progress = targetsShot / (float) totalTargets;
-
         LoadingBar.fillAmount = progress;
 
         progress = progress * 100;
