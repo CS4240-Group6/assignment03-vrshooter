@@ -20,7 +20,7 @@ A fruit is grabbed by pressing <kbd>A</kbd>(joystick button 0) on <kbd>RIGHT CON
 A fruit can be grabbed if it is one meter distance away from the controller.
 When a fruit is successfully grabbed, a grabbing sound effect is played.
 
-### Grabbing Script
+#### Grabbing Script
 GunController.cs
 
 ### 2. Throwing object
@@ -28,7 +28,7 @@ The fruit that is grabbed can be thrown by pressing <kbd>A</kbd>(joystick button
 Throwing will be done only when a fruit is successfully grabbed.
 When the fruit hits a scarecrow, a sound effect will be played on impact and the fruit will disappear.
 
-### Throwing Script
+#### Throwing Script
 GunController.cs
 </br>
 ProjectileController.cs
@@ -39,7 +39,7 @@ A green line will be displayed that goes into the distance.
 This line shows the destination that user will teleport to.
 When the line is pointed to towards an area that you cannot teleport to, it will turn red.
 
-### Teleportation Script
+#### Teleportation Script
 Teleportation.cs
 
 ### 4. Show scoreboard
@@ -50,7 +50,7 @@ The scoreboard contains the following:
 - Fruits Thrown
 - Progress (in terms of the numbe of scarecrows hit out of the total number)
 
-### Scoreboard Script
+#### Scoreboard Script
 ScoreController.cs
 </br>
 ScoreScript.cs
