@@ -13,6 +13,7 @@ Best run on Oculus Quest/ Oculus Quest 2.
 ## Setting Up
 1. Go to Assets > Import Package > Custom Package
 2. Navigate to where you have downloaded our unity package and select it
+3. Project is optimized for PC build on Oculus (if this option doesn't work, try building it as an android apk)
 
 ## Features
 ### 1. Grabbing object
@@ -65,5 +66,3 @@ The scoreboard contains the following:
 - OpenVR/XR Plugin
 - Polygon Farm
 <span style="color:gray">- SteamVR (Not Used)</span>
-
-
