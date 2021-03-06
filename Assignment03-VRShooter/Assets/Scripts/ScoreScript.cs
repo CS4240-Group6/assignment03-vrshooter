@@ -26,10 +26,10 @@ public class ScoreScript : MonoBehaviour
     //2. Add private variable to keep track of:
     //How Many fruits thrown
     private int fruitThrown = 0;
-    //How many scarecrows hit
-    private int scarecrowHit = 0;
+    //How many scarecrows left
+    public static int scarecrowLeft;
     //Constant of the total number of scarecrows
-    public const int TOTALSCARECROW = 10;
+    public int TOTALSCARECROW = 10;
 
     // Name of scoreboard game object
     public string scoreboard_name = "Scoring";
@@ -44,6 +44,9 @@ public class ScoreScript : MonoBehaviour
         FruitScoreText = ScorePanel.transform.Find("Fruits Score").GetComponent<Text>();
 
         CircularProgressBar = ScorePanel.transform.Find("Circular Progress Bar").gameObject;
+
+
+        scarecrowLeft = TOTALSCARECROW;
 
         /*
         LoadingBar = CircularProgressBar.transform.Find("Loading Bar").GetComponent<Image>();
@@ -102,18 +105,18 @@ public class ScoreScript : MonoBehaviour
 
     public void updateScore()
     {
-        scarecrowHit++;
+        scarecrowLeft--;
     }
 
     void updateText()
     {
-        FruitScoreText.text = ((int)fruitThrown).ToString();
-        ScarecrowScoreText.text = ((int) scarecrowHit).ToString();
+        FruitScoreText.text = fruitThrown.ToString();
+        ScarecrowScoreText.text = scarecrowLeft.ToString();
     }
 
     void updateProgressBar()
     {
-        float progress = scarecrowHit / (float) TOTALSCARECROW;
+        float progress = (TOTALSCARECROW - scarecrowLeft) / (float)TOTALSCARECROW;
 
         CircularProgressBar.GetComponent<CircularProgressBar>().updateProgress(progress);
     }

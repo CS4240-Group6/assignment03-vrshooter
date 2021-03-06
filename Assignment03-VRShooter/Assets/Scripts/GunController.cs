@@ -9,7 +9,7 @@ public class GunController : MonoBehaviour
 
     public string actionButtonName;
     public string resetGameButtonName;
-    public float grabRadius = 1;
+    public float grabRadius = 8.5f;
     public LayerMask grabMask;
 
     public float bulletLaunchForce = 5f; 
@@ -19,10 +19,6 @@ public class GunController : MonoBehaviour
     private bool isArmed;
     private AudioSource audioSource;
     private GameObject scoreboard;
-
-    // temp variables
-    public GameObject tempProjectile;
-    private Vector3 offset = new Vector3(0, 0.033f, 0.101f);
 
     void Start()
     {
@@ -50,22 +46,6 @@ public class GunController : MonoBehaviour
                 GrabObject();
             }
         }
-  /*      textController.setText("" + transform.GetChild(0).transform.position
-            + "\n" + transform.position
-            + "\n" + OVRInput.GetLocalControllerPosition(Controller));*/
-    }
-
-
-    // for debug purposes
-    void ShootTempObject()
-    {
-        Transform gunBarrel = transform.GetChild(0).transform; // get gun barrel transform
-        GameObject cubeProj = Instantiate(tempProjectile, gunBarrel.position, gunBarrel.rotation);
-        Rigidbody rb = cubeProj.GetComponent<Rigidbody>();
-
-        // TODO: Vector3.forward doesnt really follow the current transform.forward direction.
-        // but using transform.forward angle is too big for some reason (is it because its impulse force?)
-        rb.AddRelativeForce(transform.forward * bulletLaunchForce, ForceMode.Impulse);
     }
 
     void ShootObject()
@@ -73,10 +53,6 @@ public class GunController : MonoBehaviour
         projectile.transform.parent = null;
         projectile.GetComponent<Rigidbody>().isKinematic = false;
 
-        // projectile.GetComponent<ProjectileControl>().Shoot(transform.forward);
-
-        // TODO: Vector3.forward doesnt really follow the current transform.forward direction.
-        // but using transform.forward angle is too big for some reason (is it because its impulse force?)
         projectile.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * bulletLaunchForce, ForceMode.Impulse);
         projectile.GetComponent<ProjectileController>().ToggleShotState();
 

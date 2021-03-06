@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ProjectileController : MonoBehaviour
 {
-    public float projectileLifeTime = 10f; // 10 seconds
     public GameObject scoreboard;
 
     private bool isProjectile = false;
@@ -19,7 +18,6 @@ public class ProjectileController : MonoBehaviour
     public void ToggleShotState()
     {
         // destroys itself if it has been present for too long without collision after it has been shot
-        Destroy(gameObject, projectileLifeTime);
         isProjectile = true;
         scoreboard.GetComponent<ScoreScript>().updateThrowCount();
 
@@ -32,8 +30,6 @@ public class ProjectileController : MonoBehaviour
         
         if (isProjectile)
         {
-            
-
             // If the thing is a target, increment the score
             if (col.gameObject.CompareTag("Target"))
             {
@@ -43,14 +39,11 @@ public class ProjectileController : MonoBehaviour
                 AudioSource.PlayClipAtPoint(hayHitSound.clip, transform.position);
 
                 scoreboard.GetComponent<ScoreScript>().updateScore();
-            } else
-            {
-                // Play splat if it's not a scarecrow
-                AudioSource.PlayClipAtPoint(splatAudio.clip, transform.position);
-            }
 
-            // destroy itself
-            Destroy(gameObject);
+                // destroy itself
+                Destroy(gameObject);
+                col.gameObject.SetActive(false);
+            } 
         }
     }
 }
