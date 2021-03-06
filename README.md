@@ -29,10 +29,10 @@ The fruit that is grabbed can be thrown by pressing <kbd>A</kbd>(joystick button
 Throwing will be done only when a fruit is successfully grabbed.
 When the fruit hits a scarecrow, a sound effect will be played on impact and the fruit will disappear.
 
-###   Throwing Script
-GunController.cs
-</br>
-ProjectileController.cs
+> ### Throwing Script
+> GunController.cs
+> </br>
+> ProjectileController.cs
 
 ### 3. Teleportation
 Teleportation is done by pushing the <kbd>JOYSTICK</kbd> forward + <kbd>11th AXIS BUTTON</kbd> on <kbd>LEFT CONTROLLER</kbd>. 
@@ -55,7 +55,7 @@ The scoreboard contains the following:
 
 
 > ### Scoreboard Script
-> 
+> </br>
 > ScoreController.cs
 > ScoreScript.cs
 
