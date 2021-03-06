@@ -7,7 +7,7 @@ public class Teleportation : MonoBehaviour
     [SerializeField] OVRInput.Axis2D stick;
     [SerializeField] LineRenderer laser;
     [SerializeField] int laserSteps = 20;
-    [SerializeField] float laserSegmentDistance = 1f, dropPerSegment = .1f;
+    [SerializeField] float laserSegmentDistance = 1f, dropPerSegment = .1f, laserSize = .2f;
     [SerializeField] Transform head, cameraRig;
     [SerializeField] int collisionLayer;
 
@@ -18,6 +18,8 @@ public class Teleportation : MonoBehaviour
     private void Awake()
     {
         laser.positionCount = laserSteps;
+        laser.startWidth = laserSize;
+        laser.endWidth = laserSize;
     }
 
     private void Update()
@@ -83,6 +85,7 @@ public class Teleportation : MonoBehaviour
         ResetLaser();
 
         Vector3 offset = new Vector3(targetPos.x - head.transform.position.x, targetPos.y - cameraRig.position.y, targetPos.z - head.transform.position.z);
+
 
         cameraRig.position += offset;
     }
