@@ -1,6 +1,9 @@
 # Assignment03
 This is our CS4240 VR Scarecrow shooter and teleportation game! :D
 
+You are a farmer in a rural farmland. You are tasked with destroying all the evil scarecrows that plague that farm.
+With the fruits you have grown in your farm, destroy all the scarecrows with as little fruits as posbile.
+
 ### Environment Scene
 ![image](https://user-images.githubusercontent.com/7495242/110196271-662aeb80-7e7e-11eb-8bbe-8b8706a3f852.png)
 
@@ -19,6 +22,7 @@ When the fruit hits a scarecrow, a sound effect will be played on impact and the
 
 ### Throwing Script
 GunController.cs
+</br>
 ProjectileController.cs
 
 ### 3. Teleportation
