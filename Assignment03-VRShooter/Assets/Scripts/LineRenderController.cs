@@ -9,11 +9,14 @@ public class LineRenderController : MonoBehaviour
     private Vector3[] points;
     private int defaultNumPoints = 2;
     private float defaultDistanceBetweenPoints = 5f;
+    private float laserSize = .1f;
 
     // Start is called before the first frame update
     void Start()
     {
         lr = GetComponent<LineRenderer>();
+        lr.startWidth = laserSize;
+        lr.endWidth = laserSize;
         lr.positionCount = defaultNumPoints;
         if (start == null)
         {

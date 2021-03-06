@@ -77,7 +77,7 @@ public class GunController : MonoBehaviour
 
         // TODO: Vector3.forward doesnt really follow the current transform.forward direction.
         // but using transform.forward angle is too big for some reason (is it because its impulse force?)
-        projectile.GetComponent<Rigidbody>().AddRelativeForce(transform.forward * bulletLaunchForce, ForceMode.Impulse);
+        projectile.GetComponent<Rigidbody>().AddRelativeForce(Vector3.forward * bulletLaunchForce, ForceMode.Impulse);
         projectile.GetComponent<ProjectileController>().ToggleShotState();
 
         isArmed = false;
