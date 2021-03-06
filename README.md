@@ -8,7 +8,7 @@ With the fruits you have grown in your farm, destory all the scarecrows with as 
 ![image](https://user-images.githubusercontent.com/7495242/110196271-662aeb80-7e7e-11eb-8bbe-8b8706a3f852.png)
 
 ## Platform
-Best run on Oculus Quest/ Oculus Quest 2.
+Best run on Oculus Quest / Oculus Quest 2.
 
 ## Scene
 The main scenes that we have developed the project on is Main2.
@@ -53,7 +53,7 @@ When the line is pointed to towards an area that you cannot teleport to, it will
 Scoreboard is shown by pressing <kbd>2ND TRIGGER</kbd>(12th Axis) on <kbd>RIGHT CONTROLLER</kbd>.
 A sound effect will be played a scoreboard appears on screen.
 The scoreboard contains the following:
-- Scarecrows Hit
+- Scarecrows Remaining
 - Fruits Thrown
 - Progress (in terms of the numbe of scarecrows hit out of the total number)
 ![image](https://user-images.githubusercontent.com/7857839/110211976-1d9e1d00-7ed4-11eb-8876-32d0f424a150.png)
