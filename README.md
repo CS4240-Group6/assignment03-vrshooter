@@ -29,6 +29,7 @@ When a fruit is successfully grabbed, a grabbing sound effect is played.
 The fruit that is grabbed can be thrown by pressing <kbd>A</kbd>(joystick button 0) on <kbd>RIGHT CONTROLLER</kbd>.
 Throwing will be done only when a fruit is successfully grabbed.
 When the fruit hits a scarecrow, a sound effect will be played on impact and the fruit will disappear.
+Throwable objects include: The eggplants placed on the ground all over the world.
 
 > ### Throwing Script
 > GunController.cs
