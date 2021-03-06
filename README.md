@@ -20,7 +20,7 @@ A fruit is grabbed by pressing <kbd>A</kbd>(joystick button 0) on <kbd>RIGHT CON
 A fruit can be grabbed if it is one meter distance away from the controller.
 When a fruit is successfully grabbed, a grabbing sound effect is played.
 
-> Grabbing Script
+> ** Grabbing Script **
 > GunController.cs
 
 ### 2. Throwing object
