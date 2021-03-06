@@ -49,6 +49,8 @@ The scoreboard contains the following:
 - Scarecrows Hit
 - Fruits Thrown
 - Progress (in terms of the numbe of scarecrows hit out of the total number)
+![image](https://user-images.githubusercontent.com/7857839/110211976-1d9e1d00-7ed4-11eb-8876-32d0f424a150.png)
+
 
 ###   Scoreboard Script
 ScoreController.cs
