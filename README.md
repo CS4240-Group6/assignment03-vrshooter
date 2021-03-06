@@ -1,4 +1,4 @@
-# Assignment03
+# Assignment 3
 This is our CS4240 VR Scarecrow shooter and teleportation game! :D
 
 You are a farmer in a rural farmland. You are tasked with destroying all the evil scarecrows that plague that farm.
@@ -46,7 +46,7 @@ Teleportation.cs
 Scoreboard is shown by pressing <kbd>2ND TRIGGER</kbd>(12th Axis) on <kbd>RIGHT CONTROLLER</kbd>.
 A sound effect will be played a scoreboard appears on screen.
 The scoreboard contains the following:
-- Scarecrows hit
+- Scarecrows Hit
 - Fruits Thrown
 - Progress (in terms of the numbe of scarecrows hit out of the total number)
 
