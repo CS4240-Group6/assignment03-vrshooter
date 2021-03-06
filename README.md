@@ -40,8 +40,9 @@ A green line will be displayed that goes into the distance.
 This line shows the destination that user will teleport to.
 When the line is pointed to towards an area that you cannot teleport to, it will turn red.
 
-###   Teleportation Script
-Teleportation.cs
+> ### Teleportation Script
+> 
+> Teleportation.cs
 
 ### 4. Show scoreboard
 Scoreboard is shown by pressing <kbd>2ND TRIGGER</kbd>(12th Axis) on <kbd>RIGHT CONTROLLER</kbd>.
@@ -53,10 +54,10 @@ The scoreboard contains the following:
 ![image](https://user-images.githubusercontent.com/7857839/110211976-1d9e1d00-7ed4-11eb-8876-32d0f424a150.png)
 
 
-###   Scoreboard Script
-ScoreController.cs
-</br>
-ScoreScript.cs
+> ### Scoreboard Script
+> 
+> ScoreController.cs
+> ScoreScript.cs
 
 ## Assets Used
 - Oculus XR Plugin (Oculus Integration)
