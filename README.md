@@ -10,6 +10,9 @@ With the fruits you have grown in your farm, destory all the scarecrows with as 
 ## Platform
 Best run on Oculus Quest/ Oculus Quest 2.
 
+## Scene
+The main scenes that we have developed the project on is Main2.
+
 ## Setting Up
 1. Go to Assets > Import Package > Custom Package
 2. Navigate to where you have downloaded our unity package and select it
