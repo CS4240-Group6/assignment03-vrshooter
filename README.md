@@ -64,6 +64,6 @@ The scoreboard contains the following:
 - XR Plugin Management
 - OpenVR/XR Plugin
 - Polygon Farm
-<span style="color:grey">- SteamVR (Not Used)</span>
+<span style="color:gray">- SteamVR (Not Used)</span>
 
 
