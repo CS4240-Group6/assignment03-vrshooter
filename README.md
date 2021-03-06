@@ -55,7 +55,7 @@ ScoreController.cs
 </br>
 ScoreScript.cs
 
-### Assets Used
+## Assets Used
 - Oculus XR Plugin (Oculus Integration)
 - XR Plugin Management
 - OpenVR/XR Plugin
