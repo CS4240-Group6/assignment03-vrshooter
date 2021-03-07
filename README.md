@@ -11,7 +11,7 @@ With the fruits you have grown in your farm, destory all the scarecrows with as 
 Best run on Oculus Quest / Oculus Quest 2.
 
 ## Scene
-The main scenes that we have developed the project on is Main2.
+The main scene that we have developed the project on is Main2.
 
 ## Setting Up
 1. Go to Assets > Import Package > Custom Package
@@ -70,4 +70,4 @@ The scoreboard contains the following:
 - XR Plugin Management
 - OpenVR/XR Plugin
 - Polygon Farm
-<span style="color:gray">- SteamVR (Not Used)</span>
+- <span style="color:gray">SteamVR (Not Used)</span>
